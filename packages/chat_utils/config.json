@@ -1,0 +1,7 @@
+{
+    "name": "ChatUtils",
+    "description": "Содержит команды для управления чатом.",
+    "version": 1.0,
+    "author": "Kenny",
+    "run_file": "main.py"
+}
