@@ -1,0 +1,7 @@
+{
+    "name": "HelpPackage",
+    "description": "Предоставляет помощь по пакетам.",
+    "version": 1.2,
+    "author": "**__SYSTEM__**",
+    "docs": "help_docs.xml"
+}

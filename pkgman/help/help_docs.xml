@@ -1,0 +1,52 @@
+<!DOCTYPE XEMB>
+<xembs>
+    
+    <embed name="man-Получение справки." colour="$(help)">
+        <title>Получение справки по боту.</title>
+		<description>
+            Пользуешься ботом и не понимаешь как работает та или иная фича? Может хочешь по больше узнать про бота? ~~Тогда бУкОвЫ читай!~~ Тогда ты в любой момент можешь узнать ответ на любой интересующий тебя вопрос здесь. 
+
+            У Кенни довольно хорошая документация, в которой ты найдёшь всё о боте! 
+
+            Хочешь вообщем ознакомиться с каким-либо аспектом бота? 
+            Тогда ты можешь использовать `/help` для общего ознакомления с фичами и мануалами.
+
+            Хочешь узнать более точное описание команды чем в `/help`, ещё и с примерами?
+            В таком случае `/help command` - твой друг.
+
+            Если у тебя есть идеи, или ты нашёл ошибку в тексте, то смело пиши **администраторам**, Они постараются исправить проблему в ближайшее время!
+        </description>
+
+        <field title="Команды для получения справки">
+            :radio_button: `/help` - Выводит выбранный мануал. (_см. `/help command cmd: /help`_)
+			:radio_button: `/help command` - Выводит полное описание команды. (_см. `/help command cmd: /help command`_)
+        </field>
+	</embed>
+
+    <embed name="cmd-/help" colour="$(help)">
+        <author url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg">Kenny-docs</author>
+        <title>:scroll: `/help ?man: [имя мануала]` :scroll:</title>
+        <description>
+            Команда выводит выбранный мануал. Если мануал не указан, выводит информацию о боте.
+        </description>
+        <field title="Примеры">
+            > `/help`
+            > `/help man: Получение справки.`
+        </field>
+		<footer>Также см. "/help man: Получение справки."</footer> 
+    </embed>
+	
+    <embed name="cmd-/help command" colour="$(help)">
+        <author url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg">Kenny-docs</author>
+        <title>:scroll: `/help command cmd: [имя команды]` :scroll:</title>
+        <description>
+            Выводит описание команды. 
+            Иногда в описании команды может присутствовать знак **?** (как в `/help command cmd: /help`). Это лишь означает, что данный аргумен не обязателен, прямо как в `/help`! 
+        </description>
+        <field title="Примеры">
+            > `/help command cmd: /help command`
+        </field>
+        <footer>Также см. "/help man: Получение справки."</footer> 
+    </embed>
+
+</xembs>
