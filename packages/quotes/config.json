@@ -1,0 +1,7 @@
+{
+    "name": "Quotes",
+    "description": "Содержит команды для взаимодействия с цитатами.",
+    "version": 1.0,
+    "author": "Kenny",
+    "docs": "quotes_docs.xml"
+}

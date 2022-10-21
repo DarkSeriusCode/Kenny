@@ -1,0 +1,25 @@
+<!DOCTYPE XEMB>
+<xembs>
+
+    <embed name="man-Цитаты великих людей" colour="$(help)">
+        <title>Цитатки мудрецов.</title>
+        <description></description>
+    </embed>
+
+    <embed name="cmd-/quote" colour="$(help)">
+        <title>:scroll: `/quote` :scroll:</title>
+        <description>Выводит случайную читату, а также кнопку, нажав на которую ты получишь новую супер случайную читату!</description>
+        <field title="Примеры">
+            > `/quote` (довольно просто)
+        </field>
+    </embed>
+
+    <embed name="cmd-/quote list" colour="$(help)">
+        <title>:scroll: `/quote list` :scroll:</title>
+        <description>Выводит полный список цитат.</description>
+        <field title="Примеры">
+            > `/quote list`
+        </field>
+    </embed>
+
+</xembs>
