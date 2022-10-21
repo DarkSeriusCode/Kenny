@@ -1,0 +1,7 @@
+{
+	"category_name": "Динамичные каналы",
+	"fabric_channel_name": "{-Создать канал-}",
+	"channels_name": "[{user}]",
+	"channels_name_tmpl": "\\[.+\\]",
+	"limit": 5
+}
