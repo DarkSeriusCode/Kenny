@@ -1,0 +1,9 @@
+<!DOCTYPE XEMB>
+<xembs>
+
+    <!-- Документация по всему пакету -->
+    <embed name="man-Динамичные каналы. Миф или реальность?" colour="$(help)">
+        <author url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg">Kenny-docs</author>
+    </embed>
+
+</xembs>
