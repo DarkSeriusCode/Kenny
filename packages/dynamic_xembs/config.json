@@ -1,0 +1,7 @@
+{
+    "name": "DynamicXEMB",
+    "description": "Обеспечивает динамический рендер XEmb в чате канала.",
+    "version": 1.0,
+    "author": "Kenny",
+    "run_file": "dxemb.py"
+}
