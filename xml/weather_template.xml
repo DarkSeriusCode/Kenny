@@ -1,0 +1,23 @@
+<!DOCTYPE XEMB>
+<xembs>
+    
+    <embed name="weather-city-ok" colour="$(weather)">
+        <title>Погода в городе {}</title>
+        <thumbnail/>
+        <description>
+            :thermometer: {}C° (ощущается как {}C°)
+            {}
+        </description>
+        <footer>Погода может быть неточной!</footer>
+    </embed>
+
+    <embed name="weather-city-fail" colour="$(error)">
+        <title>Город "{}" не найден!</title>
+        <description>
+            Возможные причины ошибки:
+            1. Название города написано с ошибкой
+            2. Что-то случилось с сервисом 
+        </description>
+    </embed>
+
+</xembs>    

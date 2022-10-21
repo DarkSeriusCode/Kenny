@@ -1,6 +1,7 @@
 {
 	"colors": {
 		"help": "orange",
-		"quote": "blue"
+		"quote": "blue",
+		"weather": "gray"
 	}
 }
