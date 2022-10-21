@@ -1,0 +1,7 @@
+{
+    "name": "PackageManager",
+    "description": "Обеспечивает взаимодействие с пакетным менеджером.",
+    "version": 0.1,
+    "author": "**__SYSTEM__**",
+    "docs": "pkgman_docs.xml"
+}

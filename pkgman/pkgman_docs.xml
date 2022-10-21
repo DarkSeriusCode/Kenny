@@ -1,0 +1,21 @@
+<!DOCTYPE XEMB>
+<xembs>
+
+    <!-- Документация по всему пакету -->
+    <embed name="man-Про пакетный менеджер" colour="$(help)">
+        <author url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg">Kenny-docs</author>
+        <title>PackageManaer</title>
+        <description>Пакетный менеджер Кенни. Позволяет администраторам и разработчикам бота управлять пакетами Кенни. Использовать команды менеджера могут только **администраторы** сервера и **тестеры бота**!</description>
+        <field title="Команды менеджера">
+            :radio_button: `/pkg status` - Выводит состояние пакетов. (_см. `/help command cmd: /pkg status`_)
+        </field>
+    </embed>
+
+    <!-- Документация по команде /status -->
+    <embed name="cmd-/pkg status" colour="$(help)">
+        <author url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg">Kenny-docs</author>
+        <title>:scroll: `/pkg status` :scroll:</title>
+        <description>Позволяет простамривать состояния пакетов. Выводит: имя пакета, описание пакета, версию, автора, информацию о наличии документации к пакету.</description>
+    </embed>
+
+</xembs>
