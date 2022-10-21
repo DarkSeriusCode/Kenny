@@ -1,0 +1,41 @@
+<!DOCTYPE XEMB>
+<xembs>
+	<embed name="my_embed" colour="blurple">
+		<!-- Тег author:
+			link - Это ссылка на которую будет перенаправлен пользователь после нажатия на текст
+			url - Это ссылка на иконку автора
+		-->
+		<author link="https://fredboat.com/music-player/634453910236561419" url="https://cdn.discordapp.com/attachments/703596975509209098/940729212963266600/801a792ce9801124.jpg">Это текст в author</author>
+
+		<!-- Тег title: Ничего сложного, это просто заголовок Embed-->
+		<title>Заголовок</title>
+
+		<!-- Тег description: Описание Embed сообщения -->
+		<description>Описание</description>
+
+
+		<footer url="https://cdn.discordapp.com/attachments/703596975509209098/940729423328579594/lang_cpp.png">Это footer и иконка C++</footer>
+
+
+		<image url="https://cdn.discordapp.com/attachments/767127470695514172/940730230623076422/wallpaperflare.com_wallpaper_4.jpg"/>
+
+		<!-- Тег thumbnail: Это картинка в правом верхнем углу Embed'а
+			*url - ссылка на картинку
+		Также нет содержимого
+		-->
+		<thumbnail url="https://cdn.discordapp.com/attachments/767127470695514172/940730117183905882/Yuu_Koito-anime.jpg"/>
+
+
+		<field title="A1">[In A1]</field> 
+		<field title="B1" inline="true">[In B1]</field>
+		<field title="C1" inline="true">[In C1]</field>
+		<!-- A1 будет вести себя как обычно, но B1 и C1 будут расположены в одну строку. -->
+		<field title="A2" inline="true">[In A2]</field> 
+		<field title="B2">[In B2]</field>
+		<field title="C2" inline="true">[In C2]</field>
+		<!-- Здесь A2 будет вместе с B1 и C1 т.к они тоже inline и между ними нет обычного параграфа!
+		B2 - обычный параграф, в то время как C2 - inline
+		-->
+
+	</embed>
+</xembs>
