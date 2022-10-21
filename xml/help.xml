@@ -1,0 +1,30 @@
+<!DOCTYPE XEMB>
+<xembs>
+
+	<!--Общая информация о боте-->
+	<embed name="Про Кенни" colour="$(help)">
+		<title>О боте.</title>
+		<description>Кенни - это бот, созданный для нашего сервера.</description>
+
+		<footer>Факт: Кенни был создан 5 апреля 2020г!</footer>
+	</embed>
+
+	<!-- Про XEMB -->
+	<embed name="О XEMB формате" colour="$(help)">
+		<title>О XEMB формате</title>
+		<description>Формат XEMB позволяет описать любое Embed сообщение с помощью xml!</description>
+		<field title="Что такое Embed сообщения и из чего они состоят?">
+			Embed сообщения - это сообщения со встраиваемой частью. Например, сейчас Вы читаете Embed сообщение построеное с помощью XEMB.
+			Любое Embed сообщение может содержать следующие элементы
+				<field title="Цвет" inline="true">Цвет левой полосы</field>
+				<field title="Поле автора" inline="true">Графа вверху сообщения</field>
+				<field title="Заголовок" inline="true">Здесь всё просто, это название Embed'а [обязателен]</field>
+				<field title="Описание" inline="true">Краткое описание [обязанельно]</field>
+				<field title="Превью" inline="true">Изображение в правом верхним углу</field>
+				<field title="Поля" inline="true">Блоки текста, иногда называют параграфами</field>
+				<field title="Изображение" inline="true">Изображение в конце Embed сообщения</field>
+				<field title="Нижний текст" inline="true">Текст в конце Embed сообщения</field>
+		</field>
+	</embed>
+	
+</xembs>
