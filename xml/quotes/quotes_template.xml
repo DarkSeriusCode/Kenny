@@ -1,0 +1,18 @@
+<!DOCTYPE XEMB>
+<xembs>
+
+    <!-- Случайная цитата -->
+    <embed name="random-tmpl" colour="$(quote)">
+        <title>Случайная цитата великого мудреца!</title>
+        <description>> **{}**</description>
+        <footer>Правописание авторов сохранено.</footer>
+    </embed>
+
+    <!-- Список цитат -->
+    <embed name="quotes-list-tmpl" colour="$(quote)">
+        <title>Список цитат [{} из {}]</title>
+        <description>{}</description>
+        <footer>Правописание авторов сохранено.</footer>
+    </embed>
+
+</xembs>
