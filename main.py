@@ -1,5 +1,6 @@
-import discord
 import os
+import traceback
+import discord
 import dotenv
 from discord.ext import commands
 from pkgman.package_manager import PackageManager
@@ -22,7 +23,11 @@ async def on_ready():
 
 @bot.event
 async def on_application_command_error(ctx, err):
-    print(f"/{ctx.command.qualified_name}: {err}")
+    tb_file = open("log/traceback.txt", "a")
+    traceback.print_exception(type(err), err, err.__traceback__, file=tb_file)
+    print("\n\n>", "=" * 77, "<\n", file=tb_file)
+
+    print(f"/{ctx.command.qualified_name}: {err} (for more info see log/traceback.txt)")
     await ctx.respond("Что-то пошло не так!", ephemeral=True)
 
 # ------------------------------------------------------------------------------
@@ -30,6 +35,8 @@ async def on_application_command_error(ctx, err):
 
 def main():
     os.system("clear")
+    print("Traceback file.", file=open("log/traceback.txt", "w"))
+
     pm = PackageManager(bot)
     pm.load_all()
     bot.run(os.getenv("TOKEN"))
