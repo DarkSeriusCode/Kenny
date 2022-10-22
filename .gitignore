@@ -1,3 +1,4 @@
 .env
 .trash
 log
+**/__pycache__
