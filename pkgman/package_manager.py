@@ -131,7 +131,7 @@ class PackageManager:
 
         # Обновление и получение пакетов
         print("\033[4mОбновление списка пакетов...\033[0m")
-        self.all_packages = self.update_package_list()
+        self.all_packages = self.find_packages(self.config["find-dirs"])
         self.unblocked_pckgs = [p for p in self.all_packages if not p.blocked]
 
         # Содержит информацию о состоянии пакетов
@@ -141,19 +141,6 @@ class PackageManager:
         PackageManager.THIS_INSTANCE = self
 
     # ================================================================= #
-
-    def update_package_list(self) -> List[Package]:
-        """Обновляет список пакетов в package_config.json и возвращает список
-        доступных пакетов"""
-
-        # Поиск пакетов
-        found_pkgs = self.find_packages(self.config["find-dirs"])
-        # Запись в файл
-        self.config["packages"] = list(map(lambda x: x.path, found_pkgs))
-        file = open(self.config_path, "w", encoding="utf-8")
-        json.dump(self.config, file, indent=4)
-
-        return found_pkgs
 
     def find_packages(self, search_dirs: List[str]) -> List[Package]:
         """Ищет пакеты в директории. Пакетом 
