@@ -34,8 +34,10 @@ async def on_application_command_error(ctx, err):
 
 
 def main():
-    os.system("clear")
-    print("Traceback file.", file=open("log/traceback.txt", "w"))
+    tb_file_path = "log/traceback.txt"
+    # Just create file
+    os.makedirs(os.path.dirname(tb_file_path), exist_ok=True)
+    open("log/traceback.txt", "w").close()
 
     pm = PackageManager(bot)
     pm.load_all()
